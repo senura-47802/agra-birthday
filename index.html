@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Uththara ❤️!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes confetti {
+      0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+    }
+    .confetti {
+      position: absolute;
+      top: -10px;
+      width: 10px;
+      height: 10px;
+      background-color: #facc15;
+      animation: confetti 3s linear infinite;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-pink-100 to-yellow-100 min-h-screen flex items-center justify-center relative overflow-hidden">
+
+  <script>
+    const colors = ['#facc15', '#f472b6', '#60a5fa', '#34d399', '#f87171'];
+    for (let i = 0; i < 50; i++) {
+      const div = document.createElement('div');
+      div.className = 'confetti';
+      div.style.left = `${Math.random() * 100}vw`;
+      div.style.animationDuration = `${2 + Math.random() * 3}s`;
+      div.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+      document.body.appendChild(div);
+    }
+  </script>
+
+  <div class="bg-white p-10 rounded-2xl shadow-2xl max-w-md text-center z-10">
+    <h1 class="text-4xl font-bold text-pink-600 mb-4"> Happy 17th Birthday!<br> 🎂</h1>
+    <p class="text-lg text-gray-700 mb-6">Wishing you a day filled with love, laughter, and lots of cake! 🥳</p>
+
+    <div class="mx-auto mb-4 w-40">
+      <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+        <rect x="40" y="170" width="120" height="10" rx="5" fill="#d1d5db" />
+        <rect x="50" y="130" width="100" height="40" rx="5" fill="#fbbf24" />
+        <path d="M50 130 Q75 120, 100 130 Q125 120, 150 130" fill="#f59e0b" />
+        <rect x="60" y="100" width="80" height="30" rx="5" fill="#f472b6" />
+        <path d="M60 100 Q80 90, 100 100 Q120 90, 140 100" fill="#ec4899" />
+        <rect x="70" y="75" width="60" height="25" rx="5" fill="#60a5fa" />
+        <path d="M70 75 Q85 65, 100 75 Q115 65, 130 75" fill="#3b82f6" />
+        <rect x="85" y="50" width="5" height="25" rx="2" fill="#9ca3af" />
+        <rect x="98" y="45" width="5" height="30" rx="2" fill="#9ca3af" />
+        <rect x="111" y="50" width="5" height="25" rx="2" fill="#9ca3af" />
+        <g>
+          <path d="M87.5 45 C86 42, 89 42, 87.5 45 Z" fill="#facc15">
+            <animate attributeName="d" dur="1s" repeatCount="indefinite"
+              values="M87.5 45 C86 42, 89 42, 87.5 45 Z;
+                      M87.5 45 C85.5 41.5, 89.5 41.5, 87.5 45 Z;
+                      M87.5 45 C86 42, 89 42, 87.5 45 Z" />
+          </path>
+          <path d="M100.5 40 C99 37, 102 37, 100.5 40 Z" fill="#facc15">
+            <animate attributeName="d" dur="1s" repeatCount="indefinite"
+              values="M100.5 40 C99 37, 102 37, 100.5 40 Z;
+                      M100.5 40 C98.5 36.5, 102.5 36.5, 100.5 40 Z;
+                      M100.5 40 C99 37, 102 37, 100.5 40 Z" />
+          </path>
+          <path d="M113.5 45 C112 42, 115 42, 113.5 45 Z" fill="#facc15">
+            <animate attributeName="d" dur="1s" repeatCount="indefinite"
+              values="M113.5 45 C112 42, 115 42, 113.5 45 Z;
+                      M113.5 45 C111.5 41.5, 115.5 41.5, 113.5 45 Z;
+                      M113.5 45 C112 42, 115 42, 113.5 45 Z" />
+          </path>
+        </g>
+        <text x="100" y="205" font-size="20" text-anchor="middle" fill="#6b21a8"
+              font-family="Comic Sans MS, cursive"></text>
+      </svg>
+    </div>
+
+    <p class="text-sm text-gray-500">Made just for Agra ❤️ </p>
+  </div><br>
+<audio controls autoplay hidden>
+  <source src="sound.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>
